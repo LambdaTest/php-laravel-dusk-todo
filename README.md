@@ -5,7 +5,7 @@
 A Sample PHP-Laravel app to run selenium automation tests on lambdatest grid. 
 
 ### Prerequisites
-- Install php and composer on your system. Setup Instrcutions for the can be found  [here](https://www.lambdatest.com/support/docs/display/TD/Quick+Guide+To+Run+PHP+Tests+on+LambdaTest+Selenium+Grid) 
+- Install php and composer on your system. Setup Instrcutions for the same can be found  [here](https://www.lambdatest.com/support/docs/display/TD/Quick+Guide+To+Run+PHP+Tests+on+LambdaTest+Selenium+Grid) 
 
 ### Installation
 ```bash
