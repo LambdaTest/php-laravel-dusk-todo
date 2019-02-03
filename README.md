@@ -5,7 +5,7 @@
 A Sample PHP-Laravel app to run selenium automation tests on lambdatest grid. 
 
 ### Prerequisites
-- Install php and composer on your system. Setup Instrcutions for the can be found at. https://www.lambdatest.com/support/docs/display/TD/Quick+Guide+To+Run+PHP+Tests+on+LambdaTest+Selenium+Grid
+- Install php and composer on your system. Setup Instrcutions for the can be found  [here](https://www.lambdatest.com/support/docs/display/TD/Quick+Guide+To+Run+PHP+Tests+on+LambdaTest+Selenium+Grid) 
 
 ### Installation
 ```bash
@@ -21,7 +21,7 @@ composer dump-autoload
     ```
 - Replace `LT_USERNAME` with your lambdatest username. It can be obtained from [lamabdtest dashbaord](https://automation.lambdatest.com/)
 - Replace `LT_ACCESS_KEY` with your access key. It can be genrated from lamabdtest lamabdtest dashbaord](https://automation.lambdatest.com/) 
-- Update platform configuration in driver method of `tests/DuskTestCase.php`, to specify the target where tests should run. (List of supported OS platfrom, Browser, resolutions can be found at https://www.lambdatest.com/capabilities-generator/)
+- Update platform configuration in driver method of `tests/DuskTestCase.php`, to specify the target where tests should run. (List of supported OS platfrom, Browser, resolutions can be found at [LambdaTest capability generator](https://www.lambdatest.com/capabilities-generator/)) 
  Sample configuration
     ```php
     return RemoteWebDriver::create($url, 
@@ -63,9 +63,10 @@ composer dump-autoload
             );
     ```
 > OS specific instructions to download and setup tunnel binary can be found at the following links.
-    - For windows https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Windows
-    - For Mac https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+MacOS
-    - For Linux https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Linux
+
+    - [Windows](https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Windows)
+    - [Mac] (https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+MacOS)
+    - [Linux] (https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Linux)
 > 
 
 ### Run tests
