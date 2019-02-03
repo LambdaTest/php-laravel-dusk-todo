@@ -77,8 +77,8 @@ php artisan dusk
 
 
 
-### To genrate test cases
-- To genrate test case class execute `php artisan dusk:make {test case name}` in your project dir.  e.g:
+### To generate test cases
+- To generate test case class execute `php artisan dusk:make {test case name}` in your project dir.  e.g:
 ```bash
 php artisan dusk:make TodoTest
 ```
