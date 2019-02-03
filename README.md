@@ -1,6 +1,11 @@
 # php-laravel-dusk-todo
 A Sample app to automate on lambdatest grid. 
 
+
+### Prerequisites
+- Make sure php and composer is installed in your system. Setup Instrcutions can be found at. https://www.lambdatest.com/support/docs/display/TD/Quick+Guide+To+Run+PHP+Tests+on+LambdaTest+Selenium+Grid
+
+
 ### Installating project dependencies.
 ```bash
 composer install
