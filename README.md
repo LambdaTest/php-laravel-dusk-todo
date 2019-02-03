@@ -1,28 +1,30 @@
-# php-laravel-dusk-todo
-A Sample app to automate on lambdatest grid. 
+![LambdaTest Logo](https://www.lambdatest.com/static/images/logo.svg)
+---
 
+# php-laravel-dusk-todo
+A Sample PHP-Laravel app to run selenium automation tests on lambdatest grid. 
 
 ### Prerequisites
-- Make sure php and composer is installed in your system. Setup Instrcutions can be found at. https://www.lambdatest.com/support/docs/display/TD/Quick+Guide+To+Run+PHP+Tests+on+LambdaTest+Selenium+Grid
+- Install php and composer on your system. Setup Instrcutions for the can be found  [here](https://www.lambdatest.com/support/docs/display/TD/Quick+Guide+To+Run+PHP+Tests+on+LambdaTest+Selenium+Grid) 
 
-
-### Installating project dependencies.
+### Installation
 ```bash
+# setup project dependencies
 composer install
 composer dump-autoload
 ```
 
-
-### Configuring test.
-```bash
-cp .env.example .env
-```
-- Set LT_USERNAME with your username can be obtained from lamabdtest dashbaord
-- Set LT_ACCESS_KEY with your access key can be genrated from lamabdtest dashbaord 
-- To update platform configuration. 
-Go to -> tests/DuskTestCase.php -> driver method:
-```php
-return RemoteWebDriver::create($url, 
+### Configuration steps
+- Create `.env` from example file
+    ```bash
+        cp .env.example .env
+    ```
+- Replace `LT_USERNAME` with your lambdatest username. It can be obtained from [lamabdtest dashbaord](https://automation.lambdatest.com/)
+- Replace `LT_ACCESS_KEY` with your access key. It can be genrated from lamabdtest lamabdtest dashbaord](https://automation.lambdatest.com/) 
+- Update platform configuration in driver method of `tests/DuskTestCase.php`, to specify the target where tests should run. (List of supported OS platfrom, Browser, resolutions can be found at [LambdaTest capability generator](https://www.lambdatest.com/capabilities-generator/)) 
+ Sample configuration
+    ```php
+    return RemoteWebDriver::create($url, 
             DesiredCapabilities::chrome()
                 ->setCapability("platform", "win10")
                 ->setCapability("browserName", "chrome")
@@ -36,14 +38,14 @@ return RemoteWebDriver::create($url,
                 ->setCapability("console", true)
                 ->setCapability("tunnel", false)
         );
-```
+    ```
 
-- List of supported platfrom, browser, version can be found at https://www.lambdatest.com/capabilities-generator/
 
-###  Note: To use lambdatest ssh tunnel 
-- Please set tunnel value `true` in capabilities. e.g:
 
-    Go to -> tests/DuskTestCase.php -> driver method:
+###  Routing traffic through your local machine
+- Set tunnel value to `true` in test capabilities (found in driver method of `tests/DuskTestCase.php`). 
+
+    e.g:
     ```php
     return RemoteWebDriver::create($url, 
                 DesiredCapabilities::chrome()
@@ -60,27 +62,22 @@ return RemoteWebDriver::create($url,
                     ->setCapability("tunnel", true)
             );
     ```
-- Download and setup tunnel binary. Tunnel Instruction can be found at.
+> OS specific instructions to download and setup tunnel binary can be found at the following links.
+>    - [Windows](https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Windows)
+>    - [Mac](https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+MacOS)
+>    - [Linux](https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Linux) 
 
-For windows https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Windows
-
-For Mac https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+MacOS
-
-For Linux https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Linux
-
-
-### To run test
+### Run tests
 ```bash
 php artisan dusk
 ```
 
-
-
-
-
-### To generate test cases
-- To generate test case class execute `php artisan dusk:make {test case name}` in your project dir.  e.g:
-```bash
-php artisan dusk:make TodoTest
-```
-- Our sample Test case Go to -> tests/Browser/TodoTest.php file. It navigates to our sample app check some checkboxes add some to do.
+### Generate test cases
+- Change directory to project root `cd /your/project`
+- Execute `php artisan dusk:make {test case name}` 
+    e.g:
+    ```bash
+    php artisan dusk:make TodoTest
+    ```
+### Note
+Our sample test case can be found in `tests/Browser/TodoTest.php` file. It navigates to our sample app check some checkboxes add some to do.
