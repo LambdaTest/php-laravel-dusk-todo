@@ -2,10 +2,10 @@
 ---
 
 # php-laravel-dusk-todo
-A Sample PHP-Laravel app to run selenium automation tests on lambdatest grid. 
+A Sample PHP-Laravel app to run selenium automation tests on LambdaTest grid. 
 
 ### Prerequisites
-- Install php and composer on your system. Setup Instrcutions for the same can be found  [here](https://www.lambdatest.com/support/docs/display/TD/Quick+Guide+To+Run+PHP+Tests+on+LambdaTest+Selenium+Grid) 
+- Install php and composer on your system. Setup Instructions for the same can be found  [here](https://www.lambdatest.com/support/docs/display/TD/Quick+Guide+To+Run+PHP+Tests+on+LambdaTest+Selenium+Grid) 
 
 ### Installation
 ```bash
@@ -19,8 +19,8 @@ composer dump-autoload
     ```bash
         cp .env.example .env
     ```
-- Replace `LT_USERNAME` with your lambdatest username. It can be obtained from [lamabdtest dashbaord](https://automation.lambdatest.com/)
-- Replace `LT_ACCESS_KEY` with your access key. It can be genrated from lamabdtest lamabdtest dashbaord](https://automation.lambdatest.com/) 
+- Replace `LT_USERNAME` with your LambdaTest username. It can be obtained from [LambdaTest dashbaord](https://automation.lambdatest.com/)
+- Replace `LT_ACCESS_KEY` with your access key. It can be generated from [LambdaTest dashbaord](https://automation.lambdatest.com/) 
 - Update platform configuration in driver method of `tests/DuskTestCase.php`, to specify the target where tests should run. (List of supported OS platfrom, Browser, resolutions can be found at [LambdaTest capability generator](https://www.lambdatest.com/capabilities-generator/)) 
  Sample configuration
     ```php
@@ -80,4 +80,4 @@ php artisan dusk
     php artisan dusk:make TodoTest
     ```
 ### Note
-Our sample test case can be found in `tests/Browser/TodoTest.php` file. It navigates to our sample app check some checkboxes add some to do.
+Our sample test case can be found in `tests/Browser/TodoTest.php` file. It navigates to our sample to-do app.
