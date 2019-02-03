@@ -60,7 +60,8 @@ return RemoteWebDriver::create($url,
                     ->setCapability("tunnel", true)
             );
     ```
-- Download and setup tunnel binary. Tunnel Instruction can be found at
+- Download and setup tunnel binary. Tunnel Instruction can be found at.
+
 For windows https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Windows
 
 For Mac https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+MacOS
