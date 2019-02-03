@@ -82,4 +82,4 @@ php artisan dusk
 ```bash
 php artisan dusk:make TodoTest
 ```
-- Our sample Test case Go to -> tests/Browser/TodoTest.php file. It navigates our sample app check some checkboxes add some to do.
+- Our sample Test case Go to -> tests/Browser/TodoTest.php file. It navigates to our sample app check some checkboxes add some to do.
