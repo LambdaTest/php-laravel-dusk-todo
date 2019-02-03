@@ -40,7 +40,7 @@ return RemoteWebDriver::create($url,
 
 - List of supported platfrom, browser, version can be found at https://www.lambdatest.com/capabilities-generator/
 
-###  Note: If you want use lambdatest ssh tunnel 
+###  Note: To use lambdatest ssh tunnel 
 - Please set tunnel value `true` in capabilities. e.g:
 
     Go to -> tests/DuskTestCase.php -> driver method:
@@ -68,7 +68,7 @@ For Mac https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Mac
 For Linux https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Linux
 
 
-### Executing test
+### To run test
 ```bash
 php artisan dusk
 ```
