@@ -1,7 +1,7 @@
 ![LambdaTest Logo](https://www.lambdatest.com/static/images/logo.svg)
 ---
 
-# php-laravel-dusk-todo
+# PHP Laravel Dusk todo
 A Sample PHP-Laravel app to run selenium automation tests on LambdaTest grid. 
 
 ### Prerequisites
