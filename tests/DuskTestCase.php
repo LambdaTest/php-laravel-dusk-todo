@@ -33,20 +33,15 @@ abstract class DuskTestCase extends BaseTestCase
         $access_key = env('LT_ACCESS_KEY');
         $url = "https://".$username.":".$access_key."@hub.lambdatest.com/wd/hub";
 
-        return RemoteWebDriver::create($url, 
-            DesiredCapabilities::chrome()
-                ->setCapability("platform", "win10")
-                ->setCapability("browserName", "chrome")
-                ->setCapability("version", "71.0")
-                ->setCapability("resolution", "1024x768")
-                ->setCapability("build", "LaravelDusk Build")
-                ->setCapability("name", "LaravelDusk Test")
-                ->setCapability("network", true)
-                ->setCapability("video", true)
-                ->setCapability("visual", true)
-                ->setCapability("console", true)
-                ->setCapability("tunnel", false)
-        );
+         $capabilities = array(
+		"build" => "LaravelDusk Build",
+		"name" => "LaravelDusk Build",
+		"platform" => "Windows 10",
+		"browserName" => "Chrome",
+		"version" => "latest"
+     );
+
+        return RemoteWebDriver::create($url,$capabilities);
     }
-    
+
 }
