@@ -9,6 +9,4 @@ ports:
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - init: composer install
-    command: composer dump-autoload
-  - command: cp .env.example .env
-  - command: php artisan dusk
+    command: composer dump-autoload && cp .env.example .env &&  php artisan dusk
