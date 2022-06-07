@@ -164,9 +164,8 @@ Once you are able to connect **LambdaTest Tunnel** successfully, you would just 
 
 **Tunnel Capability**
 
-```java
-DesiredCapabilities capabilities = new DesiredCapabilities();        
-        capabilities.setCapability("tunnel", true);
+```
+ "tunnel" => true
 ```
 
 ## Documentation & Resources :books:
