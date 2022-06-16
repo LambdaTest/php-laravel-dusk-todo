@@ -21,7 +21,7 @@
 
 *Learn how to use Laravel framework to configure and run your PHP automation scripts on the LambdaTest platform*
 
-[<img height="58" width="200" src="https://user-images.githubusercontent.com/70570645/171866795-52c11b49-0728-4229-b073-4b704209ddde.png">](https://accounts.lambdatest.com/register)
+[<img height="58" width="200" src="https://user-images.githubusercontent.com/70570645/171866795-52c11b49-0728-4229-b073-4b704209ddde.png">](https://accounts.lambdatest.com/register?utm_source=github&utm_medium=repo&utm_campaign=php-laravel-dusk-todo)
 
 ## Table Of Contents
 
@@ -76,7 +76,7 @@ composer dump-autoload
 ```
 ### Setting Up Your Authentication
 
-Make sure you have your LambdaTest credentials with you to run test automation scripts on LambdaTest Selenium Grid. You can obtain these credentials from the [LambdaTest Automation Dashboard](https://automation.lambdatest.com/build) or through [LambdaTest Profile](https://accounts.lambdatest.com/login).
+Make sure you have your LambdaTest credentials with you to run test automation scripts on LambdaTest Selenium Grid. You can obtain these credentials from the [LambdaTest Automation Dashboard](https://automation.lambdatest.com/build?utm_source=github&utm_medium=repo&utm_campaign=php-laravel-dusk-todo) or through [LambdaTest Profile](https://accounts.lambdatest.com/login?utm_source=github&utm_medium=repo&utm_campaign=php-laravel-dusk-todo).
 
 **Step 3:** Create .env from example file
 ```bash
@@ -108,7 +108,7 @@ LT_ACCESS_KEY="<Your_Access_Key"
 
 **Step 6:** In [DuskTestCase.php](https://github.com/LambdaTest/php-laravel-dusk-todo/blob/master/tests/DuskTestCase.php), we are passing browser, browser version, and operating system information, along with LambdaTest Selenium grid capabilities via capabilities object. Update platform configuration in driver method of `tests/DuskTestCase.php`, to specify the target where tests should run. The capabilities object in the above code are defined as:
 
-You can generate capabilities for your test requirements with the help of our inbuilt [Desired Capability Generator](https://www.lambdatest.com/capabilities-generator/).
+You can generate capabilities for your test requirements with the help of our inbuilt [Desired Capability Generator](https://www.lambdatest.com/capabilities-generator/?utm_source=github&utm_medium=repo&utm_campaign=php-laravel-dusk-todo).
 
 ### Executing The Test
 
@@ -139,7 +139,7 @@ Our sample test case can be found in [TodoTest.php](https://github.com/LambdaTes
 
 You can test your locally hosted or privately hosted projects with LambdaTest Selenium grid using LambdaTest Tunnel. All you would have to do is set up an SSH tunnel using tunnel and pass toggle `tunnel = True` via desired capabilities. LambdaTest Tunnel establishes a secure SSH protocol based tunnel that allows you in testing your locally hosted or privately hosted pages, even before they are live.
 
-Refer our [LambdaTest Tunnel documentation](https://www.lambdatest.com/support/docs/testing-locally-hosted-pages/) for more information.
+Refer our [LambdaTest Tunnel documentation](https://www.lambdatest.com/support/docs/testing-locally-hosted-pages/?utm_source=github&utm_medium=repo&utm_campaign=php-laravel-dusk-todo) for more information.
 
 Here’s how you can establish LambdaTest Tunnel.
 
@@ -179,7 +179,7 @@ Visit the following links to learn more about LambdaTest's features, setup and t
 
 ## LambdaTest Community :busts_in_silhouette:
 
-The [LambdaTest Community](https://community.lambdatest.com/) allows people to interact with tech enthusiasts. Connect, ask questions, and learn from tech-savvy people. Discuss best practises in web development, testing, and DevOps with professionals from across the globe 🌎
+The [LambdaTest Community](https://community.lambdatest.com/?utm_source=github&utm_medium=repo&utm_campaign=php-laravel-dusk-todo) allows people to interact with tech enthusiasts. Connect, ask questions, and learn from tech-savvy people. Discuss best practises in web development, testing, and DevOps with professionals from across the globe 🌎
 
 ## What's New At LambdaTest ❓
 
@@ -205,9 +205,9 @@ To stay updated with the latest features and product add-ons, visit [Changelog](
 * LT Browser - for responsive testing across 50+ pre-installed mobile, tablets, desktop, and laptop viewports
 
     
-[<img height="58" width="200" src="https://user-images.githubusercontent.com/70570645/171866795-52c11b49-0728-4229-b073-4b704209ddde.png">](https://accounts.lambdatest.com/register)
+[<img height="58" width="200" src="https://user-images.githubusercontent.com/70570645/171866795-52c11b49-0728-4229-b073-4b704209ddde.png">](https://accounts.lambdatest.com/register?utm_source=github&utm_medium=repo&utm_campaign=php-laravel-dusk-todo)
 
 ## We are here to help you :headphones:
 
-* Got a query? we are available 24x7 to help. [Contact Us](support@lambdatest.com)
+* Got a query? we are available 24x7 to help. [Contact Us](mailto:support@lambdatest.com)
 * For more info, visit - [LambdaTest](https://www.lambdatest.com/?utm_source=github&utm_medium=repo&utm_campaign=php-laravel-dusk-todo)
