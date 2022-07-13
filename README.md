@@ -49,7 +49,7 @@ Before you begin automation testing with Laravel Dusk, you would need to:
   
   You can change the **PHP** version to **7.1** by using below homebrew commands in the terminal:
   ```bash
-  brew unlink php && brew link --force php@7.1
+  brew unlink php && brew link --force php@7.4
   ```
   **Note:** You need to download **PHP v7.1** inorder to link to that version.
 
@@ -74,6 +74,7 @@ cd php-laravel-dusk-todo
 composer install
 composer dump-autoload
 ```
+if ```composer install``` doesn't work try ```composer update --ignore-platform-reqs```
 ### Setting Up Your Authentication
 
 Make sure you have your LambdaTest credentials with you to run test automation scripts on LambdaTest Selenium Grid. You can obtain these credentials from the [LambdaTest Automation Dashboard](https://automation.lambdatest.com/build?utm_source=github&utm_medium=repo&utm_campaign=php-laravel-dusk-todo) or through [LambdaTest Profile](https://accounts.lambdatest.com/login?utm_source=github&utm_medium=repo&utm_campaign=php-laravel-dusk-todo).
