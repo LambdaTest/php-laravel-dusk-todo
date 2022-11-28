@@ -34,7 +34,7 @@
 
 Before you begin automation testing with Laravel Dusk, you would need to:
 
-* Download **PHP v7.1**. You can download and install **PHP** using following commands in the terminal:
+* Download **PHP v7.4**. You can download and install **PHP** using following commands in the terminal:
 
   * **MacOS:** Previous versions of **MacOS** have **PHP** installed by default. But for the latest **MacOS** versions starting with **Monterey**, **PHP** has to be downloaded and installed manually by using below commands: 
   ```bash
