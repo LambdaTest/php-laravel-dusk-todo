@@ -17,7 +17,7 @@ class TodoTest extends DuskTestCase
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('https://lambdatest.github.io/sample-todo-app/')
-                    ->assertTitleContains('Sample page - lambdatest.com')
+                    ->assertTitleContains('Modern To-Do App | LambdaTest')
                     ->check("li1")
                     ->check("li3")
                     ->type("#sampletodotext", "Let's add new to do item")
