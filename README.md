@@ -13,7 +13,7 @@
 With TestMu AI (Formerly LambdaTest), you can run Laravel Dusk tests with Selenium across real browsers and operating systems. This sample shows how to configure a PHP Laravel application to run browser automation tests using Laravel Dusk on the TestMu AI cloud.
 
 - [Sign up on TestMu AI](https://www.testmuai.com/register/) (Formerly LambdaTest).
-- Follow the [TestMu AI Documentation](https://www.testmuai.com/support/docs/laravel-dusk-with-selenium-running-laravel-dusk-automation-scripts-on-testmu-selenium-grid/) for the full setup walkthrough.
+- Follow the [Run Laravel Dusk tests with Selenium on TestMu AI](https://www.testmuai.com/support/docs/laravel-dusk-with-selenium-running-laravel-dusk-automation-scripts-on-testmu-selenium-grid/) for the full setup walkthrough.
 
 ### Prerequisites
 
